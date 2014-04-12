@@ -2,6 +2,8 @@
 # impress.js Config
 # -----------------------------------------------------------------
 set :title, 'Oaxaca.rb | Coding Dojo'
+set :description, 'Exposición introductoria para nuevos asistentes al dojo'
+set :author, 'Oaxaca.rb'
 
 # -----------------------------------------------------------------
 # Middleman Build Config
