@@ -1,0 +1,42 @@
+@import 'vendor/impress';
+@import "compass/css3";
+
+#inicial{
+  background-image: url('/images/logo_grande.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+img.foto{
+  @include box-shadow(grey 10px 10px 5px 0px);
+  width: 400px;
+
+  &.tilt-left{
+    @include rotate(-3deg);
+  }
+
+  &.tilt-right{
+    @include rotate(4deg);
+  }
+}
+
+.right{
+  float: right;
+}
+
+hr.white{
+  border: 0px;
+}
+
+#kata{
+  background-image: url('/images/castorkid.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding-bottom: 300px;
+}
+
+#big{
+  .footnote {
+    font-size: 32px;
+  }
+}
