@@ -1,5 +1,6 @@
 @import 'vendor/impress';
 @import "compass/css3";
+@import 'webicons';
 
 #inicial{
   background-image: url('/images/logo_grande.png');
@@ -42,8 +43,13 @@ hr.white{
 }
 
 ul.redes{
-  padding: 0 100px;
+  padding: 0 140px;
   li span{
-    float: right;
+    margin-left: 30px;
   }
+}
+
+a.webicon{
+  padding: 0 0 !important;
+  vertical-align: middle;
 }
