@@ -1,9 +1,9 @@
 # -----------------------------------------------------------------
 # impress.js Config
 # -----------------------------------------------------------------
-set :title, 'Oaxaca.rb | Coding Dojo'
-set :description, 'Exposición introductoria para nuevos asistentes al dojo'
-set :author, 'Oaxaca.rb'
+set :title, 'Refactoring | Quitando lo apestoso al código'
+set :description, 'Analizando la importancia del refactoring en el desarrollo ágil de software.'
+set :author, 'Hermes Ojeda Ruiz - LogicalBricks'
 
 # -----------------------------------------------------------------
 # Middleman Build Config

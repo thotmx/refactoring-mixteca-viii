@@ -154,7 +154,7 @@ a {
   }
 }
 
-#title {
+.title {
   padding: 0;
   .try {
     font-size: 64px;
@@ -175,12 +175,21 @@ a {
     -o-transform: translateZ(50px);
     transform: translateZ(50px);
   }
+  h2 {
+    font-size: 80px;
+    -webkit-transform: translateZ(50px);
+    -moz-transform: translateZ(50px);
+    -ms-transform: translateZ(50px);
+    -o-transform: translateZ(50px);
+    transform: translateZ(50px);
+  }
+
   .footnote {
     font-size: 32px;
   }
 }
 
-#big {
+.big {
   width: 600px;
   text-align: center;
   font-size: 60px;
@@ -196,12 +205,12 @@ a {
   }
 }
 
-#tiny {
+.tiny {
   width: 500px;
   text-align: center;
 }
 
-#ing {
+.ing {
   width: 500px;
   b {
     display: inline-block;
@@ -246,7 +255,7 @@ a {
   }
 }
 
-#imagination {
+.imagination {
   width: 600px;
   .imagination {
     font-size: 78px;
@@ -265,7 +274,7 @@ a {
   }
 }
 
-#its-in-3d {
+.its-in-3d {
   p {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;

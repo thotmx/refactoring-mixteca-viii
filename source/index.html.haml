@@ -1,88 +1,245 @@
 .fallback-message
   %p
-    Your browser
-    %b doesn't support the features required
-    by impress.js, so you are presented with a simplified version of this
-    presentation.
+    Tu navegador
+    %b no soporta las funcionalidades requeridas
+    por impress.js, se presentará una versión simplificada
   %p
-    For the best experience please use the latest
+    Para la mejor experiencia usa la última versión de
     = succeed ',' do
       %b Chrome
     %b Safari
-    or
+    o
     %b Firefox
-    browser.
 
 #impress
-
-  #inicial.step.slide{data: {x: '-1000', y: '-1500'}}
-
-  .step.slide{data: {x: -1000, y: '-1500', z: '-1000'}}
-    = image_tag 'beatles_1.jpg', class: 'foto tilt-left'
-    %hr.white
-    = image_tag 'beatles_2.jpg', class: 'foto right tilt-right'
-
-  .step.slide{data: {x: -1000, y: '-1500', z: '-2000'}}
-    = image_tag 'muhammad_1.jpg', class: 'foto tilt-left'
-    %hr.white
-    = image_tag 'muhammad_2.jpg', class: 'foto right tilt-right'
-
-  .step.slide{data: {x: -1000, y: '-1500', z: '-3000'}}
-    = image_tag 'phelps_1.jpg', class: 'foto tilt-left'
-    %hr.white
-    = image_tag 'phelps_2.jpg', class: 'foto right tilt-right'
-
-  #title.step{data: {x: 0, y: 0, scale: 4}}
-    %span.try ¿Qué es un coding
+  .title.step{data: {x: -2000, y: 0, scale: 4, z: 1000}}
     %h1
-      Dojo?
-
-  #its.step{data: {x: 850, y: 3000, rotate: 90, scale: 5}}
+      Refactoring
+    .footnote Quitando lo apestoso al código
     %p
-      Es un lugar para que el
-      %strong programador
-      se sienta
-      %strong seguro
-      , pueda
-      %strong practicar
+      %strong Hermes Ojeda Ruiz
+    %p Albañil de Sofware en LogicalBricks
+
+  .big.step{data: {x: 1000, y: 200, z: -1000, scale: 5}}
+    %span.try ¿Qué es
+    %b
+      Diseño
+    %span.try de Software?
+
+  .step{data: {x: 5000, y: 1000, z: -1000, rotate: 90, scale: 4}}
+    %p
+      Si la aplicación
+      %strong no cambia
+    %p
+      %strong No
+      necesita
+      %strong diseño
+
+  .title.step{data: {x: 7500, y: 500, z: -1000, scale: 4}}
+    %h2 Pero algo cambia...
+    %h1 siempre
+
+  .title.step{data: {x: 8000, y: 2000, z: -2500, scale: 3}}
+    %h2
+      El cambio es
+      %strong inevitable
       y
-      %strong aprender
-      de otros.
+      %strong omnipresente
 
-  #big.step{data: {x: 3500, y: 2100, rotate: 180, scale: 6}}
+  .title.step{data: {x: 1000, y: 2000, z: -1000, scale: 3}}
     %p
-      %b katas
-      %span.footnote (de programación)
+      Tomando una frase de mi amigo
+      %strong Azarel (Apux)...
+    %h2 Programar != Diseñar
+    %h2 Programar != IS*
+    .footnote Ingeniería de Software
 
-  .step{data: {x: 2825, y: 2325, z: '-3000', rotate: 300, scale: 1}}
+  .title.step{data: {x: 4000, y: 2000, z: -2000, scale: 2}}
+    %h2
+      %strong SOLID
     %ul
-      %li Disciplina,
-      %li práctica y
+      %li Single Responsability
+      %li Open-Closed
+      %li Liskov Substitution
+      %li Interface Segregation
+      %li Dependency Inversion
+    %p podríamos poner también DRY y LoD (Law of Demeter)
+
+  .title.step{data: {x: -3000, y: 2325, z: -3000, scale: 4}}
+    %h2
+      %strong Diseñar tiene 2 problemas
+    %ul
+      %li Código para la funcionalidad a entregar hoy.
+      %li Código que sea fácil de cambiar después.
+
+  .title.step{data: {x: -1200, y: 2325, z: -3000, rotate: 90, scale: 1}}
+    %h2
+      %strong ¿ Cómo evitar la dicotomía ?
+
+  .step{data: {x: -1800, y: 3825, z: -1000, scale: 2}}
+    %p
+      Diseño Orientado a Objetos
+      %strong falla
+      cuando va
+      %strong separado
+      del
+      %strong Desarrollo
+
+  .title.step{data: {x: 1000, y: 4325, z: -2000, scale: 4}}
+    %h2
+      %strong Manifiesto ágil
+    %ul
       %li
-        %strong repetición
+        %strong Individuos e interacciones
+        sobre procesos y herramientas
+      %li
+        %strong Software funcionando
+        sobre documentación extensiva
+      %li
+        %strong Colaboración con el cliente
+        sobre negociación contractual
+      %li
+        %strong Respuesta ante el cambio
+        sobre seguir un plan
 
-  #kata.step{data: {x: 6300, y: 2000, rotate: 20, scale: 4}}
-    %p
-      Sin más preámbulo...
-    %p
-      %strong ¡Que comiencen las Katas!
 
-  .step{data: {x: 3500, y: 3500}}
+  .title.step{data: {x: 5000, y: 3325, z: -1000, scale: 4}}
+    %h1
+      TDD
+    %h2
+      TDD != Pruebas
+    %h2
+      TDD == Diseño
+
+  .title.step{data: {x: 300, y: 5000, z: 0, scale: 4}}
+    %p
+      Ahora sí....
+    %h1
+      %strong Refactoring
+
+  .step{data: {x: 3500, y: 5000, scale: 1}}
+    %p
+      Un cambio a la estructura interna del software
+      para hacerlo más fácil de entender y más barato
+      de modficiar, sin cambiar su comportamiento
+      observable.
+    %p
+      %strong Martin Fowler.
+      Refactoring
+
+  .step{data: {x: 4500, y: 5000, scale: 1}}
+    %p
+      Cambio al sistema que no cambia comportamiento
+      pero mejora calidad no funcional: simplicidad,
+      flexibilidad, facilidad para entender o
+      rendimiento.
+    %p
+      %strong Kent Beck
+      XP
+
+  .title.step{data: {x: 7000, y: 3500, z: -4000, rotate: 90, scale: 2}}
+    %h2 Pasos para el refactoring
+
+  .step{data: {x: 8000, y: 3500, z: -4000, scale: 2}}
+    %ul
+      %li
+        %strong Asegurar que las pruebas pasen
+      %li Encontrar código apestoso
+      %li Determinar cómo simplificar ese código
+      %li Hacer las mejoras
+      %li
+        Correr las pruebas para asegurar
+        que todo funciona
+      %li
+        Repetir el ciclo de simplificación
+        y pruebas hasta quitar lo apestoso
+
+  .title.step{data: {x: 10000, y: 3500, z: -5000, rotate: 90, scale: 2}}
+    %p ¿Qué es
+    %h1 Código Apestoso?
+
+  .title.step{data: {x: 11500, y: 3500, z: -5000, scale: 2}}
+    %p Indicador de que algo está mal con el código.
+    %p Ocurre tanto en código como en pruebas.
+
+  .title.step{data: {x: 7000, y: 6000, z: -6000, rotate: 90, scale: 2}}
+    %h1 No
+    %h2 hacer refactoring si...
+
+  .title.step{data: {x: 8500, y: 6000, z: -6000, scale: 3}}
+    %ul
+      %li Pruebas no pasan.
+      %li Sólo se reescribe código.
+      %li Hay problemas de tiempos de entrega.
+
+  .title.step{data: {x: 10500, y: 6000, z: -7000, rotate: 90, scale: 2}}
+    %h1 Pretextos
+    %h2 para no refactorizar
+
+
+  .title.step{data: {x: 12000, y: 6000, z: -7000, scale: 2}}
+    %ul
+      %li No se entiende qué es refactoring.
+      %li Visión a corto plazo.
+      %li No pagan las tareas "extra" como refactoring.
+      %li Sólo se reescribe código.
+      %li Miedo a romper el código.
+
+  .step{data: {x: 4500, y: 7500, z: -4000, scale: 1}}
+    %h2 Eso nos lleva a un último punto...
+
+  .title.step{data: {x: 6500, y: 7000, z: -4000, rotate: 90, scale: 2}}
+    %h1 Deuda técnica
+
+  .trtle.step{data: {x: 8000, y: 6500, z: -4000, scale: 2}}
+    %h2 En palabras llanas...
+    %p
+      Es ese código que sabes que no está bien diseñado
+      pero que dejas así porque
+      %i funciona
+
+  .title.step{data: {x: 10000, y: 6500, z: -4000, scale: 2}}
+    %h2 Refactoring
+    %h1 reduce
+    %h2 la deuda técnica
+
+  .title.step{data: {x: 7000, y: 6200, z: -1000}}
+    %h2 Contacto
     %ul.redes
       %li.svg
-        %a.webicon.mail.large{:href => "#"} Visit us
-        %span oaxacarb.org
+        %a.webicon.github.large{:href => "#"} Fork us on Github
+        %span thotmx
+      %li.svg
+        %a.webicon.github.large{:href => "#"} Fork us on Github
+        %span LogicalBricks
+      %li.svg
+        %a.webicon.mail.large{:href => "#"}
+        %span hermes.ojeda@logicalbricks.com
+      %li.svg
+        %a.webicon.twitter.large{:href => "#"} Follow us on Twitter
+        %span @logicalbricks
+
+
+  .title.step{data: {x: 7000, y: 5700, rotate: 90}}
+    %h2 Un poco de publicidad
+
+  .title.step{data: {x: 8500, y: 6200, z: -1000}}
+    %h2 Comunidad oaxaca.rb
+    %ul.redes
       %li.svg
         %a.webicon.github.large{:href => "#"} Fork us on Github
         %span oaxacarb
+      %li.svg
+        %a.webicon.mail.large{:href => "#"}
+        %span oaxacarb@gmail.com
       %li.svg
         %a.webicon.facebook.large{:href => "#"} Like us on Facebook
         %span oaxaca.rb
       %li.svg
         %a.webicon.twitter.large{:href => "#"} Follow us on Twitter
-        %span oaxacarb
+        %span @oaxacarb
       %li.svg
-        %a.webicon.googleplus.large{:href => "#"} Follow us on Twitter
+        %a.webicon.googleplus.large{:href => "#"} Follow us on G+
         %span oaxaca.rb
 
   #overview.step{data: {x: 3000, y: 1500, scale: 10}}
