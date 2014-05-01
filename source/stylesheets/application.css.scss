@@ -50,3 +50,25 @@ a.webicon{
   padding: 0 0 !important;
   vertical-align: middle;
 }
+
+
+#start {
+  .image-title {
+    float: left;
+  }
+
+  .title {
+    width: 100%;
+    float: left;
+    h1{
+      font-size: 280%;
+    }
+  }
+}
+
+.contacto
+{
+  ul li {
+    font-size: 60%;
+  }
+}

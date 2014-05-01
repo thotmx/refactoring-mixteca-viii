@@ -12,13 +12,16 @@
     %b Firefox
 
 #impress
-  .title.step{data: {x: -2000, y: 0, scale: 4, z: 1000}}
-    %h1
-      Refactoring
-    .footnote Quitando lo apestoso al código
-    %p
-      %strong Hermes Ojeda Ruiz
-    %p Albañil de Sofware en LogicalBricks
+  #start.title.step{data: {x: -2000, y: 0, scale: 4, z: 1000}}
+    %div.title
+      = image_tag 'castorkid.png', class: 'image-title'
+      %h1
+        Refactoring
+      .footnote Quitando lo apestoso al código
+    %div.title
+      %p
+        %strong Hermes Ojeda Ruiz
+      %p Albañil de Sofware en LogicalBricks
 
   .big.step{data: {x: 1000, y: 200, z: -1000, scale: 5}}
     %span.try ¿Qué es
@@ -111,6 +114,9 @@
     %h2
       TDD == Diseño
 
+  .title.step{data: {x: 5000, y: 4500, z: -1000, scale: 4}}
+    = image_tag 'rgr.jpg', class: 'foto tilt-left'
+
   .title.step{data: {x: 300, y: 5000, z: 0, scale: 4}}
     %p
       Ahora sí....
@@ -153,6 +159,9 @@
       %li
         Repetir el ciclo de simplificación
         y pruebas hasta quitar lo apestoso
+
+  .title.step{data: {x: 10000, y: 3500, z: -5000, rotate: 90, scale: 2}}
+    = image_tag 'codesmell.jpg', class: 'foto tilt-left'
 
   .title.step{data: {x: 10000, y: 3500, z: -5000, rotate: 90, scale: 2}}
     %p ¿Qué es
@@ -203,7 +212,7 @@
     %h1 reduce
     %h2 la deuda técnica
 
-  .title.step{data: {x: 7000, y: 6200, z: -1000}}
+  .contacto.title.step{data: {x: 7000, y: 6200, z: -1000}}
     %h2 Contacto
     %ul.redes
       %li.svg
@@ -223,7 +232,7 @@
   .title.step{data: {x: 7000, y: 5700, rotate: 90}}
     %h2 Un poco de publicidad
 
-  .title.step{data: {x: 8500, y: 6200, z: -1000}}
+  .contacto.title.step{data: {x: 8500, y: 6200, z: -1000}}
     %h2 Comunidad oaxaca.rb
     %ul.redes
       %li.svg
